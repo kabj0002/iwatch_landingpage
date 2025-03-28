@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+:root {
+  --background: linear-gradient(#c8dce5, #b6ccda);
+  --foreground: white;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  /* --font-h1: var(--font-poppins-bold-sans);
+  --font-h2: var(--font-poppins-reg-sans); */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-color: #b6ccda;
+  color: var(--foreground);
+  /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+nav {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 2rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+  }
+  .search_shop {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+  }
+  li:hover {
+    background-color: white;
+    color: #b6ccda;
+    border-radius: 50px;
+    height: fit-content;
+    padding: 0.3rem 2rem 0.3rem 2rem;
+    cursor: pointer;
+  }
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 65px;
+  font-family: var(--font-sans);
+  font-weight: 800;
+  margin-top: 4rem;
+}
+h2 {
+  font-size: 65px;
+  font-family: var(--font-mono);
+  font-weight: 300;
+}
+li {
+  font-size: 20px;
+}
+.buy_div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  gap: 3rem;
+  justify-content: space-between;
+
+  button {
+    border: 2px solid white;
+    background-color: var(--background);
+    border-radius: 50px;
+    height: fit-content;
+    padding: 0.6rem 3rem 0.6rem 3rem;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  button:hover {
+    background-color: white;
+    color: #b6ccda;
+    transform: scale(1.1);
+  }
+
+  .arrow_div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  margin-right: 4rem;
+  justify-items: center;
+  align-items: center;
+
+  .upper_gallery {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+    .dotted_line {
+      transform: rotate(90deg);
+    }
+    .color_dot_menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .navy_dot {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #404354;
+      border: 1px solid #fff;
+    }
+    .mint_dot {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #58d7c4;
+      border: 1px solid #fff;
+      /* margin-top: 1rem; */
+    }
+    .ocean_dot {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgb(177, 218, 244);
+      border: 1px solid #fff;
+      /* margin-top: 1rem; */
+    }
+
+    .ocean_dot:hover,
+    .mint_dot:hover,
+    .navy_dot:hover {
+      transform: scale(1.3);
+      border: 2px solid #fff;
+    }
+  }
+  .color_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 2rem;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-column: 1/2;
+    grid-row: 2/3; */
+    /* align-items: center; */
+
+    figure {
+      position: relative;
+      z-index: 1;
+    }
+    img {
+      width: 80px;
+      height: auto;
+    }
+
+    figure::before {
+      content: "";
+      position: absolute;
+      top: 2rem;
+      left: 50%;
+      transform: translate(-50%);
+      width: 100px;
+      height: 50px;
+      border-radius: 8px;
+      z-index: -1;
+    }
+    figure:nth-child(1)::before {
+      background-color: #434558;
+    }
+    figure:nth-child(2)::before {
+      background-color: #6addcc;
+    }
+    figure:nth-child(3)::before {
+      background-color: rgba(177, 218, 244, 0.864);
+    }
+  }
+}
