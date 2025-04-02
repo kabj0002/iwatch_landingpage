@@ -10,19 +10,19 @@ const Header = () => {
           <IoLogoApple className="w-14 h-14 ml-8" />
         </div>
         <ul className="flex justify-between items-center list-none gap-15">
-          <li className="text-xl hover:bg-white hover:text-sky-300 hover:rounded-full hover:h-fit hover:py-1.5 hover:px-8 ">
+          <li className="text-xl hover:bg-white hover:text-[#b6ccda] hover:rounded-full hover:h-fit hover:py-1.5 hover:px-8 ">
             Mac
           </li>
-          <li className="text-xl hover:bg-white hover:text-sky-300 hover:rounded-full hover:h-fit hover:py-1.5 hover:px-8 ">
+          <li className="text-xl hover:bg-white hover:text-[#b6ccda] hover:rounded-full hover:h-fit hover:py-1.5 hover:px-8 ">
             iPhone
           </li>
-          <li className="text-xl hover:bg-white hover:text-sky-300 hover:rounded-full hover:h-fit hover:py-1.5 hover:px-8 ">
+          <li className="text-xl hover:bg-white hover:text-[#b6ccda] hover:rounded-full hover:h-fit hover:py-1.5 hover:px-8 ">
             iPad
           </li>
-          <li className="text-xl hover:bg-white hover:text-sky-300 hover:rounded-full hover:h-fit hover:py-1.5 hover:px-8 ">
+          <li className="text-xl hover:bg-white hover:text-[#b6ccda] hover:rounded-full hover:h-fit hover:py-1.5 hover:px-8 ">
             iWatch
           </li>
-          <li className="text-xl hover:bg-white hover:text-sky-300 hover:rounded-full hover:h-fit hover:py-1.5 hover:px-8 ">
+          <li className="text-xl hover:bg-white hover:text-[#b6ccda] hover:rounded-full hover:h-fit hover:py-1.5 hover:px-8 ">
             Support
           </li>
         </ul>
