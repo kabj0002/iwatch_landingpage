@@ -24,7 +24,6 @@
 body {
   background-color: #b6ccda;
   color: var(--foreground);
-  /*font-family: Arial, Helvetica, sans-serif;*/
 }
 
 nav {
@@ -121,7 +120,6 @@ li {
   .upper_gallery {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 
     .dotted_line {
       transform: rotate(90deg);
@@ -145,42 +143,12 @@ li {
         border: 2px solid #fff;
       }
     }
-
-    /* .navy_dot {
-      content: "";
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background-color: #404354;
-      border: 1px solid #fff;
-    } */
-    /* .mint_dot {
-      content: "";
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background-color: #58d7c4;
-      border: 1px solid #fff;
-    } */
-    /* .ocean_dot {
-      content: "";
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background-color: rgb(177, 218, 244);
-      border: 1px solid #fff;
-    } */
   }
   .color_menu {
     display: flex;
     flex-direction: row;
     gap: 3rem;
     margin-top: 2rem;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
-    /* grid-column: 1/2;
-    grid-row: 2/3; */
-    /* align-items: center; */
 
     figure {
       position: relative;

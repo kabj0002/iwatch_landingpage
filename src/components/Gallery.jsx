@@ -5,6 +5,7 @@ import navyWatch from "@/images/navy.png";
 import mintWatch from "@/images/mint.png";
 import oceanWatch from "@/images/ocean.png";
 import { TbLineDotted } from "react-icons/tb";
+// import Dot from "./Dot";
 
 const Gallery = () => {
   const [chosenColor, setChosenColor] = useState(navyWatch);
@@ -27,6 +28,7 @@ const Gallery = () => {
           chosenColor={chosenColor}
           setChosenColor={setChosenColor}
         >
+          {/* <Dot /> */}
           <div
             style={{ backgroundColor: "#404354" }}
             className={chosenColor === navyWatch ? "active" : ""}
