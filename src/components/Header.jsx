@@ -12,7 +12,9 @@ const Header = () => {
     <header>
       <nav className="p-7 flex justify-between items-center">
         <div className="logo_div">
-          <IoLogoApple className="w-14 h-14 ml-8" />
+          <Link href="/">
+            <IoLogoApple className="w-14 h-14 ml-8" />
+          </Link>
         </div>
         <ul className="flex justify-between items-center list-none gap-15">
           <li>
