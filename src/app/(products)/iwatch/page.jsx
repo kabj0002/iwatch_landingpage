@@ -1,12 +1,11 @@
 // import "./globals.css";
-import Header from "@/components/Header";
+"use client";
 import Main from "@/components/Main";
 import Gallery from "@/components/Gallery";
 
-export default function Home() {
+export default function iWatch() {
   return (
     <div>
-      <Header />
       <div className="flex justify-between">
         <Main />
         <Gallery />

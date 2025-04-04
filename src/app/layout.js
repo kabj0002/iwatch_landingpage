@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 //import { Poppins_Bold, Poppins_Reg } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       <body
         className={`bg-[#b6ccda] text-[white] ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>

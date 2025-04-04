@@ -29,11 +29,6 @@ const Gallery = () => {
           setChosenColor={setChosenColor}
         >
           {/* <Dot /> */}
-          {/* <div
-            style={{ backgroundColor: "#404354" }}
-            className={chosenColor === navyWatch ? "active" : ""}
-            onClick={() => setChosenColor(navyWatch)}
-          ></div> */}
           <div
             className={`w-5 h-5 rounded-full border border-white cursor-pointer bg-[#404354] transition-transform duration-200 
             hover:scale-125 hover:border-2 
@@ -41,11 +36,6 @@ const Gallery = () => {
             onClick={() => setChosenColor(navyWatch)}
           ></div>
           <TbLineDotted className="rotate-90" />
-          {/* <div
-            style={{ backgroundColor: "#58d7c4" }}
-            className={chosenColor === mintWatch ? "active" : ""}
-            onClick={() => setChosenColor(mintWatch)}
-          ></div> */}
           <div
             className={`w-5 h-5 rounded-full border border-white cursor-pointer bg-[#58d7c4] transition-transform duration-200 
             hover:scale-125 hover:border-2 
@@ -59,11 +49,6 @@ const Gallery = () => {
             ${chosenColor === oceanWatch ? "scale-125 border-2" : ""}`}
             onClick={() => setChosenColor(oceanWatch)}
           ></div>
-          {/* <div
-            style={{ backgroundColor: "rgb(177, 218, 244)" }}
-            className={chosenColor === oceanWatch ? "active" : ""}
-            onClick={() => setChosenColor(oceanWatch)}
-          ></div> */}
         </div>
       </div>
 
