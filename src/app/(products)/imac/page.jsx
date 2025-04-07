@@ -1,9 +1,15 @@
-"use client";
+// "use client";
+import ServerComponent from "@/components/serverclient/ServerComponent";
 
-export default function iMac() {
+const iMac = () => {
   return (
-    <div>
-      <h1>iMac</h1>
-    </div>
+    <>
+      <div>
+        <h1>iMac</h1>
+        <ServerComponent />
+      </div>
+    </>
   );
-}
+};
+
+export default iMac;
